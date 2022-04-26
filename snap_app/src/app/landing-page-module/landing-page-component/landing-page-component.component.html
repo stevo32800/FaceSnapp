@@ -1,0 +1,17 @@
+<div class="landing-page">
+    <div class="body">        
+    <h2>Bienvenue sur snapface</h2>
+    <p>🛫 La nouvelle manière de partager ces photos de voyage 🛬.</p>
+    <form #emailForm="ngForm" (ngSubmit)="onSubmitForm(emailForm)">
+        <label for= "emailInput"> 📧 Inscrivez-vous pour recevoir notre newsletter ! </label> 
+        <input type="email" id="emailInput"[(ngModel)]="userEmail" name="userEmail">      
+        <button type = "submit">Ok!</button>
+    </form>  
+    <img src="assets\facesnap.jpg" alt="Snapface logo">
+    <div class="landing-links">              
+    <p><button (click)="onClick() " >{{ buttonText }}</button></p> 
+      
+</div>
+
+
+
